@@ -1,21 +1,25 @@
 /* Universal style */
 
-body {
+/* body {
     margin: auto 24px;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 
 .flex-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 
 /* Navigation Header */
 header {
-    
-    background-color: tomato;
+
+    background-color: white;
     margin-left: 24px;
     margin-right: 24px;
     height: 64px;
@@ -39,7 +43,7 @@ header {
 
 nav {
     text-align: right;
-    flex-grow: 1;  
+    flex-grow: 1;
 }
 
 nav .item {
@@ -47,3 +51,48 @@ nav .item {
     padding: 0 16px;
 }
 
+
+/* Main Section */
+
+section {
+    padding: 32px 24px;
+    background-color: #c7c7c7;
+
+    display: flex;
+    align-items: center;
+}
+
+/* styling Information next to the banner image */
+
+.banner {
+    height: 60%;
+}
+
+.banner-info {
+    padding-left: 24px;
+    color: #3b3a3a;
+}
+
+.banner-info h1 {
+    font-weight: bold;
+    font-size: 4.9rem;
+}
+
+.banner-info p {
+    font-size: 2.9rem;
+} 
+
+.banner-info h4 {
+    border: 1px solid #3b3a3a;
+    background-color: #3b3a3a;
+    color: white;
+    text-align: center;
+
+    font-size: 2.0rem;
+
+    margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    width: 60%;
+}
