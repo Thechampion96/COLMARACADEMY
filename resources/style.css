@@ -20,6 +20,7 @@ body {
 header {
 
     background-color: white;
+    padding-top: 10px;
     margin-left: 24px;
     margin-right: 24px;
     height: 64px;
@@ -37,6 +38,9 @@ header {
     width: 40px;
 }
 
+p span {
+    color: #858080;
+}
 
 
 /* Navigation menu*/
@@ -50,6 +54,8 @@ nav .item {
     display: inline-block;
     padding: 0 16px;
 }
+
+
 
 
 /* Main Section */
