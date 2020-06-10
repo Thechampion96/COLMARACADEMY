@@ -73,24 +73,21 @@ section > .banner-div {
 
 .main-banner {
     display: flex;
+    
 }
 
 .main-banner > .banner{
     background-color: magenta;
 
     flex-basis: 60%;
-    margin: 32px 0 32px 24px
-
-    
 }
 
-
+/* Thumbnail section */
 
 .main-information {
     background-color: orangered;
 
     flex-basis: 40%;
-    margin: 32px 24px;
 
     display: flex;
     flex-wrap: wrap;
@@ -98,12 +95,46 @@ section > .banner-div {
 
 .thumbnail-image {
     height: auto;
-    padding: 16px;
+
 
     flex-basis: 35%;
 }
 
+.thumbnail-image > img {
+    height: auto;
+}
+
 .thumbnail-info {
+
     background-color: yellow;
     flex-grow: 1;
+
+    align-items: center;
+
+}
+
+#one {
+    background-color: #a5106c;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+#two {
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+#three {
+    background-color: deepskyblue;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 }
