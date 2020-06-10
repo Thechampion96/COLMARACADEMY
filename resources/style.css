@@ -1,104 +1,109 @@
 /* Universal style */
 
-/* body {
-    margin: auto 24px;
-} */
+*, *::before, *::after { box-sizing: inherit;}
+
+html {
+    box-sizing: border-box;
+}
 
 body {
     padding: 0;
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
 
-.flex-container {
+/*  Navigation header */
+
+/* Logo */
+
+nav > img {
+    height: 52px;
+}
+
+
+
+/* Navigation items */
+
+nav {
+    margin: 0 24px;
     display: flex;
+
+    padding: 16px 0;
     flex-wrap: wrap;
 }
 
 
-/* Navigation Header */
-header {
-
-    background-color: white;
-    padding-top: 10px;
-    margin-left: 24px;
-    margin-right: 24px;
-    height: 64px;
+nav > .left {
+    margin-left: auto;
 }
 
 
-.logo {
-    display: inline-flex;
-    font-size: 32px;
-    margin: auto;
-}
-
-.logo img {
-    margin: auto;
-    width: 40px;
-}
-
-p span {
-    color: #858080;
+nav > p {
+    padding-right: 16px;
 }
 
 
-/* Navigation menu*/
+/* Banner Section */
 
-nav {
-    text-align: right;
-    flex-grow: 1;
+.main {
+    display: flex;
+    padding: 24px;
+
+    background-color: lawngreen;
 }
 
-nav .item {
-    display: inline-block;
-    padding: 0 16px;
+section > .banner-div {
+    padding-left: 24px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex: 1;
+    flex-direction: column;
+    font-size: 30px;
+
+
+    background-color: lightsalmon;
+}
+
+/* Main information header */
+
+.main-banner {
+    display: flex;
+}
+
+.main-banner > .banner{
+    background-color: magenta;
+
+    flex-basis: 60%;
+    margin: 32px 0 32px 24px
+
+    
 }
 
 
 
+.main-information {
+    background-color: orangered;
 
-/* Main Section */
-
-section {
-    padding: 32px 24px;
-    background-color: #c7c7c7;
+    flex-basis: 40%;
+    margin: 32px 24px;
 
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* styling Information next to the banner image */
+.thumbnail-image {
+    height: auto;
+    padding: 16px;
 
-.banner {
-    height: 60%;
+    flex-basis: 35%;
 }
 
-.banner-info {
-    padding-left: 24px;
-    color: #3b3a3a;
-}
-
-.banner-info h1 {
-    font-weight: bold;
-    font-size: 4.9rem;
-}
-
-.banner-info p {
-    font-size: 2.9rem;
-} 
-
-.banner-info h4 {
-    border: 1px solid #3b3a3a;
-    background-color: #3b3a3a;
-    color: white;
-    text-align: center;
-
-    font-size: 2.0rem;
-
-    margin-left: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    
-    width: 60%;
+.thumbnail-info {
+    background-color: yellow;
+    flex-grow: 1;
 }
