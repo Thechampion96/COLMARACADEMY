@@ -20,7 +20,7 @@ html, body {
 /* Logo */
 
 nav > img {
-    height: 52px;
+    height: 80px;
 }
 
 
@@ -28,11 +28,12 @@ nav > img {
 /* Navigation items */
 
 nav {
-    margin: 0 24px;
+    margin: 16px 24px;
     display: flex;
-
-    padding: 16px 0;
+    height: 64px;
     flex-wrap: wrap;
+    color: #4A4A4A;
+    font-weight: bold;
 }
 
 
@@ -42,9 +43,13 @@ nav > .left {
 
 
 nav > p {
+    font-size: 23px;
     padding-right: 16px;
 }
 
+p > span {
+    color:#9B9B9B;
+}
 
 /* Banner Section */
 
@@ -52,7 +57,8 @@ nav > p {
     display: flex;
     padding: 24px;
 
-    background-color: lawngreen;
+    background-color: #D8D8D8;
+    color: #4A4A4A;
 }
 
 section > .banner-div {
@@ -66,75 +72,69 @@ section > .banner-div {
     font-size: 30px;
 
 
-    background-color: lightsalmon;
+    background-color: #D8D8D8;
 }
 
 /* Main information header */
 
 .main-banner {
     display: flex;
-    
+
+    margin: 32px 0 0 24px;
 }
 
-.main-banner > .banner{
-    background-color: magenta;
-
+.banner {
     flex-basis: 60%;
+    padding: 0 24px 32px 0;
 }
+
+
+.banner > img {
+    /* margin-bottom: 32px; */
+}
+
+.banner > p {
+    padding-right: 5%;
+    font-size: 1.3rem;
+    margin-bottom: 32px;
+
+}
+.banner > h1 {
+    margin-bottom: 32px;
+    font-size: 4.4rem;
+}
+
+.banner > h3 {
+    font-weight: 549;
+}
+
 
 /* Thumbnail section */
 
 .main-information {
-    background-color: orangered;
-
     flex-basis: 40%;
-
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.thumbnail-image {
-    height: auto;
+article {
+    display: flex;
+}
 
-
+article > .thumbnail-image {
     flex-basis: 35%;
 }
 
 .thumbnail-image > img {
     height: auto;
+
+    padding: 16px;
 }
 
-.thumbnail-info {
+article > .thumbnail-info {
+    margin: auto 0;
 
-    background-color: yellow;
-    flex-grow: 1;
-
-    align-items: center;
-
+    flex-basis: 65%;
 }
 
-#one {
-    background-color: #a5106c;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-
-}
-
-#two {
-    background-color: crimson;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-}
-
-#three {
-    background-color: deepskyblue;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
+#last-article {
+    background-color: #D8D8D8;
 }
