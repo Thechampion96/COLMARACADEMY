@@ -56,7 +56,6 @@ p > span {
 .main {
     display: flex;
     padding: 24px;
-
     background-color: #D8D8D8;
     color: #4A4A4A;
 }
@@ -70,8 +69,6 @@ section > .banner-div {
     flex: 1;
     flex-direction: column;
     font-size: 30px;
-
-
     background-color: #D8D8D8;
 }
 
@@ -79,7 +76,6 @@ section > .banner-div {
 
 .main-banner {
     display: flex;
-
     margin: 32px 0 0 24px;
 }
 
@@ -89,8 +85,13 @@ section > .banner-div {
 }
 
 
-.banner > img {
-    /* margin-bottom: 32px; */
+.banner > h1 {
+    margin-bottom: 32px;
+    font-size: 3.4rem;
+}
+
+.banner > h3 {
+    font-weight: 549;
 }
 
 .banner > p {
@@ -99,15 +100,6 @@ section > .banner-div {
     margin-bottom: 32px;
 
 }
-.banner > h1 {
-    margin-bottom: 32px;
-    font-size: 4.4rem;
-}
-
-.banner > h3 {
-    font-weight: 549;
-}
-
 
 /* Thumbnail section */
 
@@ -121,17 +113,20 @@ article {
 
 article > .thumbnail-image {
     flex-basis: 35%;
+    padding-right: 5%;
+    font-size: 1.3rem;
+
 }
 
 .thumbnail-image > img {
     height: auto;
-
     padding: 16px;
+    padding-top: 0;
+
 }
 
 article > .thumbnail-info {
     margin: auto 0;
-
     flex-basis: 65%;
 }
 
@@ -203,4 +198,113 @@ article > .thumbnail-info {
 
 .start-lr-flex-bottom {
     margin-bottom: 32px !important;
+}
+
+/* Thesis section */
+
+/* <!-- Thesis-Banner --> */
+
+.thesis {
+    display: flex;
+    margin: 32px 0 0 24px;
+}
+
+.thesis-banner {
+    flex-basis: 60%;
+    padding: 0 24px 0 0;
+}
+
+.thesis-banner > video {
+    width: 100%;
+}
+
+.thesis-banner > h1 {
+    margin-bottom: 32px;
+    font-size: 3.4rem;
+}
+
+.thesis-banner > h3 {
+    font-weight: 549;
+}
+
+.thesis-banner > p {
+    padding-right: 5%;
+    font-size: 1.3rem;
+    margin-bottom: 32px;
+}
+
+/* <!-- thesis-info --> */
+
+.thesis-info {
+    flex-basis: 40%;
+}
+
+article {
+    display: flex;
+}
+
+article > .thesis-image {
+    flex-basis: 35%;
+    
+    padding-right: 5%;
+    font-size: 1.3rem;
+}
+
+.thesis-image > img {
+    height: auto;
+
+    padding: 16px;
+}
+
+article > .thesis-info {
+    margin: auto 0;
+
+    flex-basis: 65%;
+}
+
+#first-article {
+    background-color: #D8D8D8;
+}
+
+#thesis-exhibit > div > span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: bold;
+    opacity: .8;
+}
+
+/* Footer section */
+
+footer {
+    margin: 16px 24px;
+    display: flex;
+    height: 64px;
+    flex-wrap: wrap;
+    color: #4A4A4A;
+    font-weight: bold;
+    opacity: .8;
+}
+
+
+footer > .left {
+    margin-left: auto;
+}
+
+
+footer > p {
+    font-size: 23px;
+    padding-right: 16px;
+}
+
+footer > span {
+    color:#9B9B9B;
+}
+
+
+
+footer > p:nth-child(1) {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
 }
