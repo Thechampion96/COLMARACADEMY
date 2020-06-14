@@ -138,3 +138,69 @@ article > .thumbnail-info {
 #last-article {
     background-color: #D8D8D8;
 }
+
+/* Start learning section */
+
+#start-lr {
+    background-color: #D8D8D8;
+}
+
+#start-lr > div > span {
+    display: block;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.start-lr > div {
+    margin: 16px;
+    
+}
+
+.start-lr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 72px 32px 72px;
+    justify-content: center;
+    
+}
+
+
+.start-lr-flex {
+    background-color: white;
+    
+}
+
+.start-lr-flex > img {
+    margin-bottom: 16px;
+}
+
+.start-lr-flex > h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 3.1rem;
+    padding: 16px;
+}
+.start-lr-flex > h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 2rem;
+    opacity: 0.6;
+    font-weight: 500;
+    padding: 16px;
+}
+.start-lr-flex > h3 {
+    
+    font-size: 2rem;
+    opacity: 0.6;
+    font-weight: 500;
+    margin: 16px;
+}
+
+
+.start-lr-flex-bottom {
+    margin-bottom: 32px !important;
+}
