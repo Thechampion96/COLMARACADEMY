@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="desktop">
         <img class="logo" src="/resources/images/ic-logo.svg" alt="LOGO" />
         <p class="logo">COLMAR<span>ACADEMY</span></p>
         <p class="item left">On Compus</p>
@@ -19,9 +19,17 @@
         <p class="item">Sign in</p>
     </nav>
 
+    <nav class="mobile">
+            <img src="./resources/images/ic-logo.svg" alt="logo">
+            <img src="./resources/images/ic-on-campus.svg" alt="desk">
+            <img src="./resources/images/ic-online.svg" alt="monitor">
+            <img src="./resources/images/ic-login.svg" alt="campus">
+    </nav>
+
     <!--  Banner section -->
-    <section class="main">
+    <section class="main desktop">
         <img src="./resources/images/banner.jpg" alt="student-reading">
+        
         <!-- Information next to the banner image -->
         <div class="banner-div">
             <h1 class="banner-info">Learn something new everyday</h1>
@@ -33,7 +41,7 @@
 
     <!-- Main information header -->
     <section class="main-banner">
-        <div class="banner">
+        <div class="banner desktop">
             <img src="./resources/images/information-main.jpg" alt="Stundent-reading-book">
             <h1>It doesn't hurt to keep practing</h1>
             <p>"Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam vitae posuere leo, at accumsan libero.
@@ -49,8 +57,8 @@
         <div class="main-information">
             <article>
                 <div class="thumbnail-image image-one">
-                    <img src="./resources/images/information-orientation.jpg" alt="student-walking-Orientation-day"
-                        >
+                    <img src="./resources/images/information-orientation.jpg" alt="student-walking-Orientation-day" class="desktop">
+                    <img src="./resources/images/information-orientation-mobile.jpg" alt="student-walking-Orientation-day" class="mobile">
                 </div>
 
                 <div class="thumbnail-image thumbnail-info" id="one">
@@ -62,7 +70,8 @@
 
             <article>
                 <div class="thumbnail-image">
-                    <img src="./resources/images/information-campus.jpg" alt="campus-student-in-class">
+                    <img src="./resources/images/information-campus.jpg" alt="campus-student-in-class" class="desktop">
+                    <img src="./resources/images/information-campus-mobile.jpg" alt="campus-student-in-class" class="mobile">
                 </div>
                 <div class="thumbnail-image thumbnail-info" id="two">
                     <h1>Our campus</h1>
@@ -73,7 +82,8 @@
 
             <article id="last-article">
                 <div class="thumbnail-image">
-                    <img src="./resources/images/information-guest-lecture.jpg" alt="male-lecture">
+                    <img src="./resources/images/information-guest-lecture.jpg" alt="male-lecture" class="desktop">
+                    <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="male-lecture" class="mobile">
                 </div>
                 <div class="thumbnail-image thumbnail-info" id="three">
                     <h1>Our guest lecture</h1>
@@ -86,57 +96,57 @@
 
     <!-- Start learning section -->
 
-    <section id="start-lr">
+    <section class="start-lrs">
         <div>
             <span>Start Learning</span>
         </div>
         <div class="start-lr">
             <div class="start-lr-flex">
-                <img src="./resources/images/course-software.jpg" alt="1">
+                <img src="./resources/images/course-software.jpg" alt="1" class="desktop">
                 <h1>Software engineering</h1>
-                <h2>COURSES</h2>
-                <h3>Web Development, Mobile</h3>
-                <h3>Development, iOT, APis</h3>
+                <h2 class="desktop">COURSES</h2>
+                <h3 class="desktop">Web Development, Mobile</h3>
+                <h3 class="desktop">Development, iOT, APis</h3>
             </div>
 
             <div class="start-lr-flex">
-                <img src="./resources/images/course-computer-art.jpg" alt="2">
+                <img src="./resources/images/course-computer-art.jpg" alt="2" class="desktop">
                 <h1>Computer art</h1>
-                <h2>COURSES</h2>
-                <h3>Motion Graphics & Visual Effects,</h3>
-                <h3>Computer Animation</h3>
+                <h2 class="desktop">COURSES</h2>
+                <h3 class="desktop">Motion Graphics & Visual Effects,</h3>
+                <h3 class="desktop">Computer Animation</h3>
             </div>
 
             <div class="start-lr-flex">
-                <img src="./resources/images/course-design.jpg" alt="3">
+                <img src="./resources/images/course-design.jpg" alt="3" class="desktop">
                 <h1>Design</h1>
-                <h2>COURSES</h2>
-                <h3>User Experience Design, User</h3>
-                <h3>Research, VIsual Design</h3>
+                <h2 class="desktop">COURSES</h2>
+                <h3 class="desktop">User Experience Design, User</h3>
+                <h3 class="desktop">Research, VIsual Design</h3>
             </div>
 
             <div class="start-lr-flex start-lr-flex-bottom">
-                <img src="./resources/images/course-data.jpg" alt="4">
+                <img src="./resources/images/course-data.jpg" alt="4" class="desktop">
                 <h1>Data</h1>
-                <h2>COURSES</h2>
-                <h3>Data Science, Big Data, SQL, Data</h3>
-                <h3>Visualization</h3>
+                <h2 class="desktop">COURSES</h2>
+                <h3 class="desktop">Data Science, Big Data, SQL, Data</h3>
+                <h3 class="desktop">Visualization</h3>
             </div>
 
             <div class="start-lr-flex start-lr-flex-bottom">
-                <img src="./resources/images/course-business.jpg" alt="4">
+                <img src="./resources/images/course-business.jpg" alt="4" class="desktop">
                 <h1>Business</h1>
-                <h2>COURSES</h2>
-                <h3>Product Development, Business</h3>
-                <h3>Development, Startup</h3>
+                <h2 class="desktop">COURSES</h2>
+                <h3 class="desktop">Product Development, Business</h3>
+                <h3 class="desktop">Development, Startup</h3>
             </div>
 
             <div class="start-lr-flex start-lr-flex-bottom">
-                <img src="./resources/images/course-marketing.jpg" alt="4">
+                <img src="./resources/images/course-marketing.jpg" alt="4" class="desktop">
                 <h1>Marketing</h1>
-                <h2>COURSES</h2>
-                <h3>Analytics, Content Marketing,</h3>
-                <h3>Mobile Marketing</h3>
+                <h2 class="desktop">COURSES</h2>
+                <h3 class="desktop">Analytics, Content Marketing,</h3>
+                <h3 class="desktop">Mobile Marketing</h3>
             </div>
         </div>
     </section>
