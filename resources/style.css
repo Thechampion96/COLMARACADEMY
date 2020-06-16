@@ -61,11 +61,11 @@ p > span {
 }
 
 section > .banner-div {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    
     flex: 1;
     flex-direction: column;
     font-size: 30px;
@@ -85,7 +85,7 @@ section > .banner-div {
     font-size: 30px;
     padding-top: 22px;
     padding-bottom: 22px;
-    
+
 }
 
 /* Main information header */
@@ -126,6 +126,7 @@ section > .banner-div {
 article {
     display: flex;
 }
+
 
 article > .thumbnail-image {
     flex-basis: 35%;
@@ -282,7 +283,7 @@ article > .thesis-info {
     background-color: #D8D8D8;
 }
 
-#thesis-exhibit > div > span {
+.thesis-exhibit > div > span {
     display: block;
     text-align: center;
     font-weight: bold;
@@ -337,7 +338,7 @@ footer > p:nth-child(1) {
 
 
 
-@media all and (max-width: 700px){
+@media all and (max-width: 900px){
  
     .desktop {
         display: none;
@@ -349,11 +350,16 @@ footer > p:nth-child(1) {
         text-decoration: none;
         justify-content: space-evenly;
     }
+
+    nav > img {
+        height: 64px;
+    }
+
 }
 
 /* <!--  Banner section --> */
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 900px) {
 
     .main {
         padding: 0;
@@ -362,10 +368,7 @@ footer > p:nth-child(1) {
         
     }
 
-    section > .banner-div {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+
 
     .main-banner {
     display: flex;
@@ -383,11 +386,15 @@ footer > p:nth-child(1) {
 
 /* <!-- Main information header --> */
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 900px) {
     
     /* <!-- Thumbnail section --> */
-
+    .main-banner {
+        display: block;
+        margin: 0;
+    }
     
+
 
     .main-information {
         flex-basis: 100%;
@@ -398,30 +405,35 @@ footer > p:nth-child(1) {
         display: inline-block;
       }
 
+      .main-information > article {
+        display: block;
+        padding: 16px;
+    }
+
     article > .thumbnail-image {
         flex-basis: 100%;
         padding-right: 0;
+        width: 100%;
+        
         
       }
 
-     article > .thumbnail-image {
-        
-      }  
-    
-    article > .thumbnail-image > img {
-       
-        
+      .thumbnail-image > img {
+        padding: 0px;
+        padding-top: 0;
+        width: 100%;
     }
 
     article > .thumbnail-info {
-        
+        margin: 0;
+        flex-basis: 100%;
     }
 
 }
 
 /* <!-- Start learning section --> */
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 900px) {
 
     .start-lrs {
         background-color: #F5F4F5;
@@ -443,7 +455,8 @@ footer > p:nth-child(1) {
 
     .start-lr {
         display: block;
-         margin: 0 0 32px 0;
+         /* margin: 0 0 32px 0; */
+         padding-bottom: 32px;
         
     }
   
@@ -470,7 +483,9 @@ footer > p:nth-child(1) {
         font-size: 3.1rem;
     }
 
-    
+    /* .marketing {
+        margin-bottom: 32px;
+    } */
     
     .start-lr-flex-bottom {
         margin-bottom: 0 !important;
@@ -480,3 +495,70 @@ footer > p:nth-child(1) {
 
 /* <!-- Thesis section --> */
 
+@media all and (max-width: 900px) {
+    
+    .thesis-exhibit > div > span {
+        background-color: inherit;
+        display: block;
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 16px;
+        font-weight: bold;
+        font-size: 3.8rem;
+    }
+
+}
+
+/* <!-- Thesis-Banner --> */
+
+@media all and (max-width: 900px) {
+    .thesis {
+        display: block;
+        padding-bottom: 24px;
+        margin: 0;
+    }
+
+    .thesis-banner {
+        flex-basis: 100%;
+        padding: 0;
+    }
+}
+
+/* <!-- Footer --> */
+
+@media all and (max-width: 900px) {
+    hr {
+        display: none;
+    }
+
+    footer {
+        padding: 16px 24px;
+        padding: 0;
+        display: flex;
+        height: 64px;
+        flex-wrap: wrap;
+        color: #4A4A4A;
+        font-weight: bold;
+        opacity: .8;
+    }
+
+    footer > p:nth-child(3) {
+        display: none;
+    }
+
+    footer > p:nth-child(4) {
+        display: none;
+    }
+}
+
+/* @media all and (max-width: 900px) {
+    
+    .main-information {
+        display: block;
+    }
+
+    .main-information > article {
+        display: block;
+    }
+
+} */
